@@ -6,14 +6,12 @@
     <title>Devinette</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <script src="script.js"></script>
     <h1 class="margin">Devinez le Nombre</h1>
     <p class="margin">Essayer de deviner un nombre entre 1 et 100</p>
-    <input type="number" id="guess" min="1" max="100">
-    <button>Vérifier</button>
+    <input type="number" id="tentative" placeholder="Entrez un nombre" min="1" max="100">
+    <button onclick="checking()">Vérifier</button>
     <p id="message"></p>
-
 </body>
-
 </html>

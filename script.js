@@ -3,9 +3,9 @@ let tentatives = 0;
 
 function checking() {
     let UtilisateurGuess = document.getElementById('deviner').value;
-    let message = document.getElementByID('message');
+    let message = document.getElementById('message');
     tentatives++;
-
+    
     if (UtilisateurGuess == randomNumber) {
         message.innerHTML = `Félicitations! Vous avez trouvé le nombre ${randomNumber} en ${tentatives} .`;
         message.style.color = 'green';

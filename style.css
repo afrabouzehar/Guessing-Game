@@ -2,19 +2,26 @@ body {
      font-family: sans-serif;
      text-align: center;
      margin-top: 50px;
+   
 }
 
 input {
      padding: 10px;
      width: 100px;
+     border-radius: 10px;
+     
 }
 
 button {
      padding: 10px 20px;
      cursor: pointer;
+     border-radius: 10px;
 }
 
 #message {
      margin-top: 20px;
      font-weight: bold;
+}
+.margin{
+     margin: 32px;
 }

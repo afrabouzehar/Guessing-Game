@@ -1,4 +1,4 @@
-let randomNumber = (Math.random() * 100) + 1;
+let randomNumber = Math.floor(Math.random() * 100) + 1;
 let tentatives = 0;
 
 function checking() {

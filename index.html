@@ -10,12 +10,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1 class="margin">Devinez le Nombre</h1>
-    <p class="margin">Essayer de deviner un nombre entre 1 et 100</p>
-    <input type="number" id="guess" min="1" max="100">
-    <button>Vérifier</button>
-    <p id="message"></p>
 
+<body>
+    <main class="game-card">
+        <h1>Devinez le Nombre</h1>
+        <p class="subtitle">Essayez de deviner un nombre entre 1 et 100.</p>
+
+        <div class="input-row">
+            <input type="number" id="guess" min="1" max="100" placeholder="Votre nombre">
+            <button id="check-btn" type="button">Vérifier</button>
+        </div>
+
+        <p id="message">Bonne chance !</p>
+
+        <div class="stats">
+            <p>Essais: <span id="attempts">0</span></p>
+            <button id="reset-btn" type="button" class="secondary">Rejouer</button>
+        </div>
+    </main>
+
+    <script src="script.js" defer></script>
 </body>
+
 </html>
